@@ -2,10 +2,10 @@
 
 namespace app\models;
 
-use Yii;
+use yii;
 use yii\base\Model;
 use yii\data\ActiveDataProvider;
-use app\models\Country;
+//use app\models\Country;
 
 /**
  * CountrySearch represents the model behind the search form about `app\models\Country`.
