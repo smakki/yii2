@@ -2,6 +2,7 @@
 
 namespace app\controllers;
 
+use app\models\RegisterForm;
 use Yii;
 use yii\filters\AccessControl;
 use yii\web\Controller;
@@ -143,5 +144,13 @@ class SiteController extends Controller
             // либо страница отображается первый раз, либо есть ошибка в данных
             return $this->render('entry', ['model' => $model]);
         }
+    }
+
+    public function actionRegister(){
+        if (!Yii::$app->user->isGuest){
+            return $this->goHome();
+        }
+        $model = new RegisterForm();
+        return $this->render('register',['model' => $model]);
     }
 }
