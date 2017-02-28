@@ -38,6 +38,7 @@ AppAsset::register($this);
         'items' => [
             ['label' => 'Home', 'url' => ['/site/index']],
             ['label' => 'Say',  'url' => ['/site/say']],
+            ['label' => 'Parser',  'url' => ['/parser/index']],
             ['label' => 'Form',  'url' => ['/site/entry']],
             ['label' => 'ActiveRecord',  'url' => ['/country/index']],
             ['label' => 'About', 'url' => ['/site/about']],
